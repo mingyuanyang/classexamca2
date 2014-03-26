@@ -21,6 +21,13 @@ $(document).ready(function() {
         if ((firstnumber.length == 0) || (secondnumber.length == 0)) {
             alert("Please input TWO numbers to calculate");
         }
+		
+		else if (firstnumber > 100000000000){
+		     alert("First number is out of range");
+			 }
+		else if (secondnumber > 100000000000){
+		     alert("Second number is out of range");
+			 }	 
        
         else {
             $("#result").html("<h1>The result is </h1>" + Calculator.AddTwoNumbers(firstnumber,secondnumber));
@@ -35,6 +42,13 @@ $(document).ready(function() {
         if ((firstnumber.length == 0) || (secondnumber.length == 0)) {
             alert("Please input TWO numbers to calculate");
         }
+		
+		else if (firstnumber > 100000000000){
+		     alert("First number is out of range");
+			 }
+		else if (secondnumber > 100000000000){
+		     alert("Second number is out of range");
+			 }	 
        
         else {
             $("#result").html("<h1>The result is </h1>" + Calculator.MinusTwoNumbers(firstnumber,secondnumber));
@@ -49,6 +63,13 @@ $(document).ready(function() {
         if ((firstnumber.length == 0) || (secondnumber.length == 0)) {
             alert("Please input TWO numbers to calculate");
         }
+		
+		else if (firstnumber > 100000000000){
+		     alert("First number is out of range");
+			 }
+		else if (secondnumber > 100000000000){
+		     alert("Second number is out of range");
+			 }	 
        
         else {
             $("#result").html("<h1>The result is </h1>" + Calculator.MulTwoNumbers(firstnumber,secondnumber));
@@ -62,6 +83,13 @@ $(document).ready(function() {
         if ((firstnumber.length == 0) || (secondnumber.length == 0)) {
             alert("Please input TWO numbers to calculate");
         }
+		
+		else if (firstnumber > 100000000000){
+		     alert("First number is out of range");
+			 }
+		else if (secondnumber > 100000000000){
+		     alert("Second number is out of range");
+			 }	 
 		
         else if (secondnumber ==0){
 		     alert("Nothing can be divide by 0");
