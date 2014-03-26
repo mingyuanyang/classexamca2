@@ -15,6 +15,12 @@ var Calculator = (function () {
 			    throw new Error ("Not a number");
 			  }
 			  
+			  if (x > 100000000000){
+			    throw new Error ("First number is out of range");
+			  }
+			  if (y > 100000000000){
+			    throw new Error ("Second number is out of range");
+			  }
 			  var z = x + y;
 			  return z;
 		},
@@ -29,6 +35,13 @@ var Calculator = (function () {
 			  }
 	          if (isNaN(y) == true){
 			    throw new Error ("Not a number");
+			  }
+			  
+			  if (x > 100000000000){
+			    throw new Error ("First number is out of range");
+			  }
+			  if (y > 100000000000){
+			    throw new Error ("Second number is out of range");
 			  }
 			  
 			  var z = x - y;
@@ -46,6 +59,12 @@ var Calculator = (function () {
 	          if (isNaN(y) == true){
 			    throw new Error ("Not a number");
 			  }
+			  if (x > 100000000000){
+			    throw new Error ("First number is out of range");
+			  }
+			  if (y > 100000000000){
+			    throw new Error ("Second number is out of range");
+			  }
 			  
 			  var z = x * y;
 			  return z;
@@ -62,7 +81,15 @@ var Calculator = (function () {
 	          if (isNaN(y) == true){
 			    throw new Error ("Not a number");
 			  }
-			  
+			  if (y == 0){
+			    throw new Error ("Can't be divided by 0");
+			  }
+			  if (x > 100000000000){
+			    throw new Error ("First number is out of range");
+			  }
+			  if (y > 100000000000){
+			    throw new Error ("Second number is out of range");
+			  }
 			  var z = x / y;
 			  return z;
 		}
