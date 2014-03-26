@@ -59,10 +59,13 @@ $(document).ready(function() {
         var firstnumber = $("#firstnumber").val();
         var secondnumber = $("#secondnumber").val();
 
-
         if ((firstnumber.length == 0) || (secondnumber.length == 0)) {
             alert("Please input TWO numbers to calculate");
         }
+		
+        else if (secondnumber ==0){
+		     alert("Nothing can be divide by 0");
+		}
        
         else {
             $("#result").html("<h1>The result is </h1>" + Calculator.DivideTwoNumbers(firstnumber,secondnumber));
