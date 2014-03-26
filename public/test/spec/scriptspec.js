@@ -20,11 +20,12 @@ describe ("My Calculator -- Jasmine test", function() {
         expect (function() {Calculator.AddTwoNumbers("xyz", "abc")}).toThrow(new Error("Not a number"));
     })
 	
-		it("Test first number is out of range", function() {
+	it("Test first number is out of range for add two numbers", function() {
 
         expect (function() {Calculator.AddTwoNumbers("200000000000", "2")}).toThrow(new Error("First number is out of range"));
     })
-	it("Test second number is out of range", function() {
+	
+	it("Test second number is out of range for add two numbers", function() {
 
         expect (function() {Calculator.AddTwoNumbers("2", "200000000000")}).toThrow(new Error("Second number is out of range"));
     })
@@ -50,11 +51,12 @@ describe ("My Calculator -- Jasmine test", function() {
         expect (function() {Calculator.MinusTwoNumbers("xyz", "abc")}).toThrow(new Error("Not a number"));
     })
 	
-		it("Test first number is out of range", function() {
+	it("Test first number is out of range for sub", function() {
 
         expect (function() {Calculator.MinusTwoNumbers("200000000000", "2")}).toThrow(new Error("First number is out of range"));
     })
-	it("Test second number is out of range", function() {
+	
+	it("Test second number is out of range for sum", function() {
 
         expect (function() {Calculator.MinusTwoNumbers("2", "200000000000")}).toThrow(new Error("Second number is out of range"));
     })
@@ -80,11 +82,12 @@ describe ("My Calculator -- Jasmine test", function() {
         expect (function() {Calculator.MulTwoNumbers("xyz", "abc")}).toThrow(new Error("Not a number"));
     })
 	
-	it("Test first number is out of range", function() {
+	it("Test first number is out of range for multiple", function() {
 
         expect (function() {Calculator.MulTwoNumbers("200000000000", "2")}).toThrow(new Error("First number is out of range"));
     })
-	it("Test second number is out of range", function() {
+	
+	it("Test second number is out of range for multiple", function() {
 
         expect (function() {Calculator.MulTwoNumbers("2", "200000000000")}).toThrow(new Error("Second number is out of range"));
     })
@@ -114,11 +117,13 @@ describe ("My Calculator -- Jasmine test", function() {
 
         expect (function() {Calculator.DivideTwoNumbers("5", "0")}).toThrow(new Error("Can't be divided by 0"));
     })
-	it("Test first number is out of range", function() {
+	
+	it("Test first number is out of range for divide", function() {
 
         expect (function() {Calculator.DivideTwoNumbers("200000000000", "2")}).toThrow(new Error("First number is out of range"));
     })
-	it("Test second number is out of range", function() {
+	
+	it("Test second number is out of range for divide", function() {
 
         expect (function() {Calculator.DivideTwoNumbers("2", "200000000000")}).toThrow(new Error("Second number is out of range"));
     })

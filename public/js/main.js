@@ -103,8 +103,7 @@ $(document).ready(function() {
 	$("#clearinput").click(function() {
         $("#firstnumber").val('');
         $("#secondnumber").val('');
-		$("#result").text('Result will display here !');
-		
+		$("#result").text('Result will display here !');		
     });
-
+	
 });		

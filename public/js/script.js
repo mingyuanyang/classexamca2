@@ -1,6 +1,6 @@
 var Calculator = (function () {
-    // private stuff goes here
-
+    // simple calculator for + - * and / 
+    // aria ca2 
     return {
 		
 		AddTwoNumbers: function (a, b) {
@@ -95,6 +95,5 @@ var Calculator = (function () {
 		}
 
     }
-
 
 })();

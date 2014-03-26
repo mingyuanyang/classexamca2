@@ -21,27 +21,6 @@ function changeImg(){
 	if(index==5){index=0;}
 }
 
-/*var context = document.getElementById("canvas").getContext("2d");
-var Image_car = new Image();
-Image_car.src = "images/car.jpg";
-Image_car.onload = function (event) {
-    var loadedImage = event.target;
-    var sx = 151, sy = 171, sw = 825, sh = 252;
-    var dx = 0, dy = 0, dw = 210, dh = 60;
-    context.drawImage(loadedImage, sx, sy, sw, sh, dx, dy, dw, dh);
-    var move = setInterval(function () {
-        dx++;
-        if (dx > 320){dx = 0;}
-        context.clearRect(0,0,1000,60);
-        context.drawImage(Image_car, sx, sy, sw, sh, dx, dy, dw, dh);
-    }, 5);
-     var button = document.getElementById("button2");
-    button.onclick = function(){
-        clearInterval(move);
-    };
-};
-*/
-
 window.onload=function(){
 	init();	
 	document.getElementById("audio1").play();
